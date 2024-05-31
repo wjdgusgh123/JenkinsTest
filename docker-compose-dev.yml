@@ -1,0 +1,11 @@
+services:
+  demo:
+    tty: true
+    container_name: demo
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - TZ=Asia/Seoul
+    ports:
+      - "12003:8080"
